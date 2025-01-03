@@ -17,6 +17,7 @@ var productcontainer = document.getElementById("productcontainer");
 var search = document.getElementById("search");
 var productList = productcontainer.querySelectorAll("div");
 
+
 search.addEventListener("keyup", function (event) {
     var enteredValue = event.target.value.toUpperCase().trim();
 
@@ -24,8 +25,10 @@ search.addEventListener("keyup", function (event) {
         var productText = productList[count].textContent.toUpperCase();
         if (productText.indexOf(enteredValue) < 0) {
             productList[count].style.display = "none";
+
         } else {
             productList[count].style.display = "block";
+
         }
     }
 });
