@@ -13,7 +13,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0">
         <a class="text-2xl" href="index.html">Greenden</a>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -32,18 +32,38 @@
     </nav>
 
 
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000 border border-green-800 rounded-3xl" style="width: 50%; height:400px; right: -50%;">
+        <div class="textright p-5">
+            <p id="closenav">X</p>
+        </div>
+        <ul class="flex gap-10 flex-col text-gray-600 text-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html" target="blank">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+
+
     <!--Headersection-->
     <header class="bg-green-100 p-8 flex justify-center">
         <div>
             <p class="mb-4">We offer you a wide Range of Artificial and Natural Flowers</p>
             <h1 class="mb-5 text-4xl font-bold  ">Plants for your Interior</h1>
             <div class="flex gap-3 gap-3 mb-5">
-                <button class="bg-black text-white rounded p-1">
+                <a  href="product.html" class="bg-black text-white rounded p-1">
                     Shop Now
-                </button>
-                <button class="p-1 border border-black rounded ">
+                </a>
+                <a href="https://youtube.com" class="p-1 border border-black rounded ">
                     Watch video
-                </button>
+                </a>
             </div>
             <p>160+ Plant Species | 100+ Clients</p>
         </div>
@@ -170,7 +190,9 @@
         <p>&copy; 2021 Greenday.com</p>
     </div>
 
+    <script src="index.js">
 
+    </script>
 </body>
 
 </html>

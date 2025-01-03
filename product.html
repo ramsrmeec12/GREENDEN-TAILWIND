@@ -14,7 +14,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0">
         <a class="text-2xl" href="index.html">Greenden</a>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -33,16 +33,36 @@
     </nav>
 
 
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000 border border-green-800 rounded-3xl" style="width: 50%; height:400px; right: -50%;">
+        <div class="textright p-5">
+            <p id="closenav">X</p>
+        </div>
+        <ul class="flex gap-10 flex-col text-gray-600 text-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html" target="blank">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
 
-    <!--Bestseller-->
+
+
+    <!--products-->
     <div class="text-center p-4 border ">
         <p class="font-medium text-3xl text-center m-4">Our Products</p>
         <div class=" flex justify-center m-5 ">
-            <input placeholder="Search for Any products" type="text" name="" id="" class="border border-gray-100 m-1 p-1">
+            <input id="search" placeholder="Search for Any products" type="text" name="" id=""
+                class="border border-gray-100 m-1 p-1">
             <button class="bg-black text-white border rounded-2xl p-1">Search</button>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4">
+        <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4">
             <div class="">
                 <img class="inline mt-2 border rounded-2xl hover:shadow-xl " src="./images/bestseller.png"
                     alt="rosepot">
@@ -52,19 +72,19 @@
             <div>
                 <img class="inline  mt-2 border rounded-2xl hover:shadow-xl" src="./images/bestseller2.png"
                     alt="rosepot">
-                <p>Rosepot</p>
+                <p>Lilly pot</p>
                 <p>Rs. 200/- only</p>
             </div>
             <div>
                 <img class="inline  mt-2 border rounded-2xl hover:shadow-xl" src="./images/bestseller3.png"
                     alt="rosepot">
-                <p>Rosepot</p>
+                <p>Yellow pot</p>
                 <p>Rs. 200/- only</p>
             </div>
             <div>
                 <img class="inline mt-2 border rounded-2xl hover:shadow-xl" src="./images/bestseller4.png"
                     alt="rosepot">
-                <p>Rosepot</p>
+                <p>White pot</p>
                 <p>Rs. 200/- only</p>
             </div>
             <div>
@@ -75,31 +95,34 @@
             <div>
                 <img class="inline mt-2 border rounded-2xl hover:shadow-xl" src="./images/bestseller2.png"
                     alt="rosepot">
-                <p>Rosepot</p>
+                <p>Lilly pot</p>
                 <p>Rs. 200/- only</p>
             </div>
             <div>
                 <img class="inline mt-2 border rounded-2xl hover:shadow-xl" src="./images/bestseller3.png"
                     alt="rosepot">
-                <p>Rosepot</p>
+                <p>Yellow pot</p>
                 <p>Rs. 200/- only</p>
             </div>
             <div>
                 <img class="inline mt-2 border rounded-2xl hover:shadow-xl" src="./images/bestseller4.png"
                     alt="rosepot">
-                <p>Rosepot</p>
+                <p>White pot</p>
                 <p>Rs. 200/- only</p>
             </div>
         </div>
     </div>
 
+    
 
-     <!--footer-->
-     <div class="bg-green-100 p-5 mt-5">
+    <!--footer-->
+    <div class="bg-green-100 p-5 mt-5">
         <p class="font-medium text-3xl mb-5">Greenden</p>
-        <p class="mb-3">The Standard chunk of blended seeds grown into a beautiful  flower is waiting for you.</p>
+        <p class="mb-3">The Standard chunk of blended seeds grown into a beautiful flower is waiting for you.</p>
         <p>&copy; 2021 Greenday.com</p>
     </div>
+
+    <script src="product.js"></script>
 </body>
 
 </html>
